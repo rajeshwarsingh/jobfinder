@@ -1,0 +1,41 @@
+{
+  "ids": {
+    "Todo": 6,
+    "User": 1234568,
+    "UserCredentials": 7,
+    "HireManager": 2,
+    "Post": 3
+  },
+  "models": {
+    "Todo": {
+      "1": "{\"title\":\"Take over the galaxy\",\"desc\":\"MWAHAHAHAHAHAHAHAHAHAHAHAHAMWAHAHAHAHAHAHAHAHAHAHAHAHA\",\"id\":1}",
+      "2": "{\"title\":\"destroy alderaan\",\"desc\":\"Make sure there are no survivors left!\",\"id\":2}",
+      "3": "{\"title\":\"play space invaders\",\"desc\":\"Become the very best!\",\"id\":3}",
+      "4": "{\"title\":\"crush rebel scum\",\"desc\":\"Every.Last.One.\",\"id\":4}",
+      "5": "{\"title\":\"task1\",\"desc\":\"task desc\",\"isComplete\":true,\"id\":5}"
+    },
+    "User": {
+      "4": "{\"username\":\"testuser1\",\"email\":\"testuser1@abc.com\",\"id\":4}",
+      "123": "{\"id\":\"123\",\"realm\":\"me\",\"username\":\"jugaad\",\"email\":\"jugaad@gmail.com\",\"emailVerified\":true,\"verificationToken\":\"tokentest\",\"additionalProp1\":{}}",
+      "1234": "{\"id\":\"1234\",\"realm\":\"me1\",\"username\":\"jugaad\",\"email\":\"jugaad@gmail.com\",\"emailVerified\":true,\"verificationToken\":\"tokentest123\",\"additionalProp1\":{}}",
+      "12345": "{\"id\":\"12345\",\"realm\":\"me1\",\"username\":\"jugaad\",\"email\":\"jugaad@gmail.com\",\"emailVerified\":true,\"verificationToken\":\"tokentest123\",\"additionalProp1\":{}}",
+      "123456": "{\"id\":\"123456\",\"realm\":\"me1\",\"username\":\"jugaad\",\"email\":\"jugaad@gmail.com\",\"verificationToken\":\"tokentest123\"}",
+      "1234567": "{\"id\":\"1234567\",\"realm\":\"me1\",\"username\":\"jugaad\",\"email\":\"jugaad1@gmail.com\",\"verificationToken\":\"tokentest123\"}"
+    },
+    "UserCredentials": {
+      "1": "{\"password\":\"$2a$10$QrcA7GDOZ06TTXEBhuz87On8mcapb9qoU3rjWb7Z5pwBv7ZAbmXwa\",\"userId\":4,\"id\":1}",
+      "004530a8-ec71-4be5-9d0d-61c828aa4ecc": "{\"id\":\"004530a8-ec71-4be5-9d0d-61c828aa4ecc\",\"password\":\"$2a$10$lGWlhVbe.GwiRu1DY9T1aee9p90WrvRakEieBvp7PvT/cmoOTF8U6\",\"userId\":\"123\"}",
+      "3c6c075d-2835-4ed0-8a35-e49c1c6982fa": "{\"id\":\"3c6c075d-2835-4ed0-8a35-e49c1c6982fa\",\"password\":\"$2a$10$XUVJF3epc76qEIJEbukui.FpbzXA/57WMdhobrPjytBsHqT85ZBUG\",\"userId\":\"1234\"}",
+      "2cd7a94a-2b86-4526-90b0-5fa85ee39bb6": "{\"id\":\"2cd7a94a-2b86-4526-90b0-5fa85ee39bb6\",\"password\":\"$2a$10$jT442WfTGfWz4Qub.F/NDOApIYLd3m6WYR45xqq1.0py4L4YXkAja\",\"userId\":\"12345\"}",
+      "c1b7217c-1b6b-4b1c-ad45-b415ff70edd1": "{\"id\":\"c1b7217c-1b6b-4b1c-ad45-b415ff70edd1\",\"password\":\"$2a$10$9TBa7YMq9Uve6/zjrWTYV.po3N.PFZM4WX/u7GvR8n6LK82iyQoum\",\"userId\":\"123456\"}",
+      "88b3d0c1-c9aa-4273-a60b-23143b76ed21": "{\"id\":\"88b3d0c1-c9aa-4273-a60b-23143b76ed21\",\"password\":\"$2a$10$uaKCLKn5ZJdUcVu2dMJwv.oaihKE7JCUWg39zO5L0cUf8bCuKvuiu\",\"userId\":\"1234567\"}"
+    },
+    "HireManager": {
+      "05ae7b1c-e94a-4f7e-931a-6d014999fa68": "{\"hireMngrId\":\"05ae7b1c-e94a-4f7e-931a-6d014999fa68\",\"userId\":\"test1\",\"registrationDate\":\"safdadsf\",\"location\":\"mumbai\"}"
+    },
+    "Post": {
+      "1": "{\"hireMngrId\":\"user1\",\"title\":\"website\",\"description\":\"desc\",\"images\":[],\"files\":[{\"url\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699974/jugaad/fl0fbeyityfw04xcc0vv.png\",\"format\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699974/jugaad/fl0fbeyityfw04xcc0vv.png\",\"fileName\":\"logo.png\"},{\"url\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699975/jugaad/cnl60vecf8eozt3kg6ma.pdf\",\"format\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699975/jugaad/cnl60vecf8eozt3kg6ma.pdf\",\"fileName\":\"sample.pdf\"}],\"mainSkill\":\"js\",\"paymentType\":\"BY-The-Hour\",\"priceRange\":\"10000-20000\",\"price\":\"\",\"jobType\":\"Time\",\"jobCategory\":\"Human Resources\",\"location\":\"mumbai\",\"expectedDuration\":\"\",\"geometry\":[],\"review\":\"\",\"avgRating\":\"\",\"author\":\"\",\"subSkill\":[\"node\",\" react\"],\"postId\":\"1\"}",
+      "2": "{\"hireMngrId\":\"user1\",\"title\":\"website\",\"description\":\"desc\",\"images\":[],\"files\":[{\"url\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699974/jugaad/fl0fbeyityfw04xcc0vv.png\",\"format\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699974/jugaad/fl0fbeyityfw04xcc0vv.png\",\"fileName\":\"logo.png\"},{\"url\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699975/jugaad/cnl60vecf8eozt3kg6ma.pdf\",\"format\":\"http://res.cloudinary.com/dkydl3enp/image/upload/v1601699975/jugaad/cnl60vecf8eozt3kg6ma.pdf\",\"fileName\":\"sample.pdf\"}],\"mainSkill\":\"js\",\"paymentType\":\"BY-The-Hour\",\"priceRange\":\"10000-20000\",\"price\":\"\",\"jobType\":\"Time\",\"jobCategory\":\"Human Resources\",\"location\":\"mumbai\",\"expectedDuration\":\"\",\"geometry\":[],\"review\":\"\",\"avgRating\":\"\",\"author\":\"\",\"subSkill\":[\"node\",\" react\"],\"postId\":\"2\"}"
+    }
+  }
+}

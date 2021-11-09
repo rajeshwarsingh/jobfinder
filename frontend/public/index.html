@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>jugaad</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-signin-client_id" content="181177508142-e7ulpv40bn7du03tf76p1cp3cs86dtvc.apps.googleusercontent.com.apps.googleusercontent.com">
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/colors/sky.css">
+<!-- <link rel="stylesheet" href="/css/colors/red.css"> -->
+
+</head>
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper" className="wrapper-with-transparent-header"></div>
+    <!-- Wrapper / End -->
+    
+<!-- Scripts
+================================================== -->
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/jquery-migrate-3.1.0.min.js"></script>
+<script src="/js/mmenu.min.js"></script>
+<script src="/js/tippy.all.min.js"></script>
+<script src="/js/simplebar.min.js"></script>
+<script src="/js/bootstrap-slider.min.js"></script>
+<script src="/js/bootstrap-select.min.js"></script>
+<script src="/js/snackbar.js"></script>
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/counterup.min.js"></script>
+<script src="/js/magnific-popup.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+// Snackbar for user status switcher
+$('#snackbar-user-status label').click(function() { 
+	Snackbar.show({
+		text: 'Your status has been changed!',
+		pos: 'bottom-center',
+		showAction: false,
+		actionText: "Dismiss",
+		duration: 3000,
+		textColor: '#fff',
+		backgroundColor: '#383838'
+	}); 
+}); 
+</script>
+
+<!-- Google Autocomplete -->
+<script>
+	function initAutocomplete() {
+		 var options = {
+		  types: ['(cities)'],
+		  // componentRestrictions: {country: "us"}
+		 };
+
+		 var input = document.getElementById('autocomplete-input');
+		 var autocomplete = new google.maps.places.Autocomplete(input, options);
+	}
+</script>
+
+<!-- Google API & Maps -->
+<!-- Geting an API Key: https://developers.google.com/maps/documentation/javascript/get-api-key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHPc_xR1Cj-YzUdu5APY0Zo2NK_d5dXR0&v=3.exp&libraries=geometry,drawing,places" ></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="/js/infobox.min.js"></script>
+<script src="/js/markerclusterer.js"></script>
+<script src="/js/maps.js" async defer></script>
+</body>
+</html>

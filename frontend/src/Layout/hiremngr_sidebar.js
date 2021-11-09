@@ -1,0 +1,61 @@
+import ls from 'local-storage'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import config from '../config'
+const { baseSocketUrl,baseFrontenUrl,  displayNameSettings } = config
+var loadjs = require('loadjs');
+
+export class HiremngrDashboardSidebar extends Component {
+  
+  render () {
+    return (
+    // <!-- Dashboard Sidebar================================================== -->
+      <div className='dashboard-sidebar'>
+        <div className='dashboard-sidebar-inner' data-simplebar>
+          <div className='dashboard-nav-container'>
+
+            {/* <!-- Responsive Navigation Trigger --> */}
+            <a href='#' className='dashboard-responsive-nav-trigger'>
+              <span className='hamburger hamburger--collapse'>
+                <span className='hamburger-box'>
+                  <span className='hamburger-inner' />
+                </span>
+              </span>
+              <span className='trigger-title'>Dashboard Navigation</span>
+            </a>
+
+            {/* <!-- Navigation --> */}
+            <div className='dashboard-nav'>
+              <div className='dashboard-nav-inner'>
+
+                <ul data-submenu-title='Start'>
+                  <li><Link to={this.props.path === '/hiremngr/dashboard' ? '#' : '/hiremngr/dashboard'}><i className='icon-material-outline-dashboard' /> Dashboard</Link></li>
+
+                </ul>
+
+                <ul data-submenu-title='Organize and Manage'>
+
+                  <li className='active-submenu'><a href='#'><i className='icon-material-outline-assignment' /> Projects</a>
+                    <ul>
+                      <li><Link to={this.props.path === '/hiremngr/post_manage_post' ? '#' : '/hiremngr/post_manage_post'}>Manage {displayNameSettings.post}s <span className='nav-tag'>`{ls.get('countPostMng')}`</span></Link></li>
+                      <li><Link to={this.props.path === '/hiremngr/post/create' ? '#' : '/hiremngr/post/create'}>Create {displayNameSettings.post}</Link></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <ul data-submenu-title='Account'>
+                  <li><a href='/freelancer/setting'><i className='icon-material-outline-settings' /> Settings</a></li>
+                  <li><Link to='/logout'>Logout</Link></li>
+                </ul>
+
+              </div>
+            </div>
+            {/* <!-- Navigation / End --> */}
+
+          </div>
+        </div>
+      </div>
+    // <!-- Dashboard Sidebar / End -->
+    )
+  }
+}
